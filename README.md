@@ -13,6 +13,8 @@ This project will do the following:
 
 - Utilize a basic toy dataset built for named entity recognition (NER).
 - Show how to build all the component pieces to make use of the `transformers` `trainer` object.
+- Utilize the `trainer` object and the `optuna` library to perform hyperparameter tuning on the model.
+- Perform basic evaluation of a model.
 - Compress and store a functional model on `AWS S3`.
 - Create a basic web application with `Flask` to take in strings of text to run predictions on.
 - Containerize said web application with `Docker` with a custom setup to play nice with `AWS Sagemaker`
