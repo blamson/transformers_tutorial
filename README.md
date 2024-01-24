@@ -5,7 +5,7 @@
 
 This repository is intended to function as a user-friendly guide to the `transformers` library and how to utilize it for a deployable end-to-end web application. I will be fine tuning a BERT model on the downstream task of named-entity-recognition. 
 
-This repository itself, though detailed, will only be one part of the tutorial. The bulk of the information will be hosted in a writeup on my website, [here]([https://bradylamson.com/](https://bradylamson.com/p/named-entity-recognition-a-transformers-tutorial/)). 
+This repository itself, though detailed, will only be one part of the tutorial. The bulk of the information will be hosted in a writeup on my website, [here](https://bradylamson.com/p/named-entity-recognition-a-transformers-tutorial/). 
 
 ## Overview:
 
