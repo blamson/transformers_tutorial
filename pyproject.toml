@@ -21,6 +21,7 @@ torch = "^2.1.2"
 seqeval = "^1.2.2"
 accelerate = "^0.26.1"
 matplotlib = "^3.8.2"
+loguru = "^0.7.2"
 
 
 [build-system]
