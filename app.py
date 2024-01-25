@@ -28,9 +28,8 @@ def invocations():
 
     body: dict = request.json
 
-    logger.info("Validating Request")
     if schemas.validate_request(body):
-        data = body.strings
+        data = body["strings"]
     else:
         error_response: dict = {
             "error": "Invalid Request",
@@ -39,7 +38,6 @@ def invocations():
 
         return jsonify(error_response), 400
 
-    logger.info("Running Predictions")
     predictions: list = predict(data, pipe=pipe)
     output: str = json.dumps(predictions, indent=4)
 

@@ -28,7 +28,9 @@ def load_model(model_dir: str) -> Pipeline:
 
 def predict(data: list, pipe: Pipeline) -> list:
 
+    logger.info("Running predictions")
     pipe_output = pipe(data)
     predictions = [make_pipe_play_nice_with_jsonify(text_prediction) for text_prediction in pipe_output]
+    logger.success("Predictions completed")
 
     return predictions

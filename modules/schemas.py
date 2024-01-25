@@ -18,8 +18,10 @@ def validate_request(body: dict) -> bool:
 		"additionalProperties": False
 	}
 
+	logger.info("Validating Request")
 	try:
 		jsonschema.validate(instance=body, schema=schema)
+		logger.success("Validation Successful")
 		return True
 	except jsonschema.exceptions.ValidationError:
 		logger.error("Body failed schema validation.")
