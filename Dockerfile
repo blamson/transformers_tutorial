@@ -13,4 +13,4 @@ COPY . .
 
 ENV SM_MODEL_DIR /opt/ml/model
 
-ENTRYPOINT ["gunicorn", "-c", "gunicorn_config.py", "-b", "0.0.0.0:8080", "app:app", "-n"]
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8080", "app:app", "-n"]
